@@ -1,0 +1,149 @@
+@prefix ex: <http://example.org/dogbreed#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:age a owl:DatatypeProperty ;
+    rdfs:domain ex:DogIndividual ;
+    rdfs:range xsd:float .
+
+ex:associatedWithDisease a owl:ObjectProperty ;
+    rdfs:domain ex:Biomarker ;
+    rdfs:range ex:Disease .
+
+ex:belongsToGroup a owl:ObjectProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range ex:BreedGroup .
+
+ex:biomarkerID a owl:DatatypeProperty ;
+    rdfs:domain ex:Biomarker ;
+    rdfs:range xsd:string .
+
+ex:biomarkerName a owl:DatatypeProperty ;
+    rdfs:domain ex:Biomarker ;
+    rdfs:range xsd:string .
+
+ex:biomarkerType a owl:DatatypeProperty ;
+    rdfs:domain ex:Biomarker ;
+    rdfs:range xsd:string .
+
+ex:breedName a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:conclusion a owl:DatatypeProperty ;
+    rdfs:domain ex:DogIndividual ;
+    rdfs:range xsd:string .
+
+ex:demeanorCategory a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:demeanorValue a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:description a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:diseaseName a owl:DatatypeProperty ;
+    rdfs:domain ex:Disease ;
+    rdfs:range xsd:string .
+
+ex:energyLevelCategory a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:energyLevelValue a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:groomingFrequencyCategory a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:groomingFrequencyValue a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:hasBiomarker a owl:ObjectProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range ex:Biomarker .
+
+ex:hasTemperament a owl:ObjectProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range ex:Temperament .
+
+ex:instanceOfBreed a owl:ObjectProperty ;
+    rdfs:domain ex:DogIndividual ;
+    rdfs:range ex:DogBreed .
+
+ex:maxExpectancy a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:maxHeight a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:maxWeight a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:minExpectancy a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:minHeight a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:minWeight a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:organism a owl:DatatypeProperty ;
+    rdfs:domain ex:DogIndividual ;
+    rdfs:range xsd:string .
+
+ex:popularity a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:integer .
+
+ex:sex a owl:DatatypeProperty ;
+    rdfs:domain ex:DogIndividual ;
+    rdfs:range xsd:string .
+
+ex:sheddingCategory a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:sheddingValue a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:trainabilityCategory a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:string .
+
+ex:trainabilityValue a owl:DatatypeProperty ;
+    rdfs:domain ex:DogBreed ;
+    rdfs:range xsd:float .
+
+ex:weight a owl:DatatypeProperty ;
+    rdfs:domain ex:DogIndividual ;
+    rdfs:range xsd:float .
+
+ex:BreedGroup a owl:Class .
+
+ex:Temperament a owl:Class .
+
+ex:Disease a owl:Class .
+
+ex:Biomarker a owl:Class .
+
+ex:DogIndividual a owl:Class .
+
+ex:DogBreed a owl:Class .
+
